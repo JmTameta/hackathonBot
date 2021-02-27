@@ -1,6 +1,6 @@
 # Can be multiple prefixes, like this: ("!", "?")
 BOT_PREFIX = ("!")
-TOKEN = "THIS IS A FAKE TOKEN"
+TOKEN = "ODE1Mjg4NjYzNzY3MjUzMDM1.YDqOvA.2X0upqqfSVfbm8BLLu5i2SyycHk"
 APPLICATION_ID = "815288663767253035"
 OWNERS = [123456789, 987654321]
 BLACKLIST = []

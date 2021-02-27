@@ -91,6 +91,7 @@ async def on_message(message):
 	if message.author == bot.user or message.author.bot:
 		return
 	else:
+		print(f"message sent!")
 		if message.author.id not in config.BLACKLIST:
 			# Process the command if the user is not blacklisted
 			await bot.process_commands(message)
@@ -123,6 +124,11 @@ async def on_command_error(context, error):
 		)
 		await context.send(embed=embed)
 	raise error
+
+#ping command
+@bot.command()
+async def pingMe(ctx):
+	await ctx.channel.send("pong")
 
 # Run the bot with the token
 bot.run(config.TOKEN)
